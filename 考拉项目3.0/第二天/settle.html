@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>结算</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/settle.css">
+</head>
+<body>
+<div class="head-img">
+    <a href="#">
+        <img src="images/1.jpg" alt="">
+    </a>
+</div>
+<div class="search">
+    <a href="http://localhost:63342/%E7%AC%AC%E4%BA%8C%E5%A4%A9/index.html?_ijt=72i0s3i1kp53ncb9k6rh0sourt" class="logo"></a>
+</div>
+<div class="head-text">
+    <h2>选择收货地址</h2>
+    <div class="head-text-link">
+        <div class="head-text-link-add" id="head-text-link-add"></div>
+        <span id="Add">+新增收货地址</span>
+    </div>
+</div>
+<div class="adds" id="Adds">
+    <div class="adds-text">
+        <div class="adds-texts">
+            <h2>新增收货地址 <span id="DeleteBtnO">×</span></h2>
+        </div>
+        <form class="adds-list" id="addsList">
+            <p class="adds-list-add">
+                <input type="text" name="city" placeholder="或手动输入" id="Ity">
+                <span><i>*</i>&nbsp所在地区</span>
+                省份：
+                <select id="province">
+                    <option value="0" >-请选择-</option>
+                </select>
+
+                城市：
+                <select id="city" >
+                    <option value="0" name="city">-请选择-</option>
+                </select>
+
+                区县：
+                <select id="area">
+                    <option value="0">-请选择-</option>
+                </select>
+
+            </p>
+            <p class="adds-list-region">
+                <span><i>*</i>&nbsp详细地址</span>
+                <textarea placeholder="无需重复填写省市区，小于75个字" name="address" id="address"></textarea>
+
+            </p>
+            <p class="adds-list-name">
+                <span><i>*</i>&nbsp收件人姓名</span>
+                <input type="text" placeholder="不能为昵称、X先生、X小姐等，请使用真实姓名" name="address_name" id="address_name">
+            </p>
+            <p class="adds-list-phone">
+                <span><i>*</i>&nbsp手机号码</span>
+                <input type="text" placeholder="手机号码、电话号码必须填一项" name="mobile" id="modile">
+            </p>
+            <p class="adds-list-Cphone">
+                <span>&nbsp电话号码</span>
+                <input type="text" placeholder="区号" name="phoneC">
+            </p>
+            <p class="adds-list-email">
+                <span>&nbsp邮箱</span>
+                <input type="text" placeholder="接受订单提醒邮件，便于您及时了解订单状态" name="email">
+            </p>
+            <div class="adds-list-btn">
+                <span id="DeleteBtn">取消</span>
+                <em id="KeepBtn">保存新地址</em>
+            </div>
+        </form>
+    </div>
+</div>
+<script type="text/javascript" src="JS/jquery.js"></script>
+<script type="text/javascript" src="JS/common(通用).js"></script>
+<script type="text/javascript" src="JS/settle.js"></script>
+</body>
+</html>
