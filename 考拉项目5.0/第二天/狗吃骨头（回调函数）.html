@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>回调</title>
+</head>
+<body>
+<script>
+    function cook(feed) {
+        var i = 0;
+        var timer = setInterval(function () {
+            console.log("正在做饭，过了" + ++i + "秒");
+            if(i === 5){
+                console.log('饭做好了');
+                clearInterval(timer);
+                feed('骨头fsfsfdsfsczcz');
+            }
+        },1000);
+    }
+//    function eat() {
+//        console.log('正在吃饭');
+//
+//    }
+    function feed(food) {
+        console.log('狗吃'+food)
+    }
+    cook(feed);
+</script>
+</body>
+</html>
